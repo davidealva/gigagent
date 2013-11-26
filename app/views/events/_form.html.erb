@@ -16,7 +16,12 @@
       <%= f.input :event_url, placeholder: 'Enter full URL i.e. http://website.com'  %>
       <%= f.input :confirmed, as: :boolean %>
       <%= f.input :description, as: :text, :input_html => {:rows => 7} %>
-      <%= f.submit "Create event", class: "btn btn-success" %>
+
+      <div class="form-actions">
+          <%= f.submit "Create event", class: "btn btn-success" %>
+          <%= link_to "Cancel", :back, class: "btn btn-link" %>
+      </div>
+     
     </div>
     
     <% end %>

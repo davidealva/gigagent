@@ -12,6 +12,9 @@ gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
 gem 'devise'
 gem 'simple_form', '~> 3.0.0'
 
+group :production do
+  gem 'pg'
+end
 
 group :development do
   gem 'sqlite3'
