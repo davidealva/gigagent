@@ -15,9 +15,9 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .
-$(function(){
-  $('#event_event_date').datepicker();
 
+$(function(){
+  $('#event_event_date').datepicker({ dateFormat: "yy-mm-dd" });
 });
 
 
