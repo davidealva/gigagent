@@ -1,7 +1,8 @@
 Gigagent::Application.routes.draw do
   get "home/index"
 
-  devise_for :users
+  devise_for :users, :controllers => { :registrations => "users/registrations" }
+
   get 'users/:id' => 'admin#index', as: :user
 
   root 'home#index'
