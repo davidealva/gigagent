@@ -1,0 +1,6 @@
+== README
+
+This is the base skeleton for the GigAgent Rails App. This version is the base
+for development. 
+
+- MadebyDiesel
