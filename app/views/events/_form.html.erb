@@ -3,7 +3,7 @@
       <%= simple_form_for(@event, html: {class: 'form-vertical' }) do |f| %>
 
     <div class="col-md-5 col-sm-offset-1">
-      <%= f.input :event_date, as: :string, placeholder: 'Enter dates as Year-Month-Day...' %>
+      <%= f.input :event_date, as: :string, placeholder: 'Enter Year-Month-Day...' %>
       <%= f.input :event_name %>
       <%= f.input :venue %>
       <%= f.input :city %>

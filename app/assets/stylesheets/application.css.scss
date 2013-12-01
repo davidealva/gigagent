@@ -18,8 +18,14 @@ body {
 }
 
 .jumbotron {
-  height: 400px;
+  height: 500px;
+  background-image: url('http://www.thebpm.net/wp-content/uploads/2013/04/Crowd-Shot__RedBullThre3Style-National-Finals-2013.jpg');
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  color: #c0392b;
 }
+
+
  #devise-form {
   padding-top: 80px;
  }
@@ -35,3 +41,25 @@ body {
  .alert-notice {
   background: aqua;
  }
+
+ .text-muted {
+  text-decoration:line-through;
+  text-transform:uppercase;
+ }
+ .text-danger {
+  text-transform:uppercase;
+ }
+
+.btn-lg {
+  border-radius: 0px;
+}
+
+.btn-danger {
+  background: #c0392b;
+}
+
+.navbar {
+  background: #1C2731;
+  height: 60px;
+}
+ 

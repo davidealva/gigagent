@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
 
   validates_presence_of :first_name, :last_name, :profile_name, :email
 
-  has_many :events
+  has_many :events, -> { order('event_date ASC') }
 
   before_save :create_permalink
 
