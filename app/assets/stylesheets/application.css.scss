@@ -19,12 +19,21 @@ body {
 
 .jumbotron {
   height: 500px;
-  background-image: url('http://www.thebpm.net/wp-content/uploads/2013/04/Crowd-Shot__RedBullThre3Style-National-Finals-2013.jpg');
+  background: -webkit-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('http://www.thebpm.net/wp-content/uploads/2013/04/Crowd-Shot__RedBullThre3Style-National-Finals-2013.jpg');
+  background: -moz-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('http://www.thebpm.net/wp-content/uploads/2013/04/Crowd-Shot__RedBullThre3Style-National-Finals-2013.jpg');
+  background: -linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('http://www.thebpm.net/wp-content/uploads/2013/04/Crowd-Shot__RedBullThre3Style-National-Finals-2013.jpg');
   background-repeat:no-repeat;
   background-size:100% 100%;
   color: #c0392b;
 }
 
+#branding {
+  color: #ffffff;
+  width: 60%;
+}
+#branding {
+  text-align:center;
+}
 
  #devise-form {
   padding-top: 80px;
@@ -38,6 +47,10 @@ body {
   padding-top: 80px;
  }
 
+.admin.btn {
+  margin-top: 18px;
+}
+
  .alert-notice {
   background: aqua;
  }
@@ -50,7 +63,7 @@ body {
   text-transform:uppercase;
  }
 
-.btn-lg {
+.btn {
   border-radius: 0px;
 }
 

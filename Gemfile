@@ -11,6 +11,8 @@ gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :github => 'anjlab/bootstrap-rails'
 gem 'devise'
 gem 'simple_form', '~> 3.0.0'
+gem "paperclip", "~> 3.5.2"
+gem 'aws-sdk'
 
 group :production do 
   gem 'rails_12factor'
