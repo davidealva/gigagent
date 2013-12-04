@@ -1,11 +1,15 @@
 <div id="admin" class="container">
   <div class="row">
     <div class="col-md-12">
-
+      <div>
+        <div>
+          <%= image_tag @user.avatar.url(:thumb) %>
+        </div>
+      </div>
+      
       <div class="row">
         <div class="col-md-6 col-md-offset-1">
           <h3>Admin Panel : <%= @user.profile_name %></h3>
-          <%= image_tag @user.avatar.url(:thumb) %>
         </div>
         <div class="col-md-1 col-md-offset-2">
           <%= link_to 'Create a new Event', new_event_path, class: "admin btn btn-success" %>

@@ -9,10 +9,11 @@ class User < ActiveRecord::Base
 
   has_many :events, -> { order('event_date ASC') }
 
-  has_attached_file :avatar, styles: {
+  has_attached_file :avatar, :default_url => "https://s3.amazonaws.com/gigagent/users/default/default.png", 
+                styles: {
     thumb: '100x100>',
     square: '200x200#',
-    medium: '300x300>'
+    medium: '300x300>',
   }
 
   before_save :create_permalink
