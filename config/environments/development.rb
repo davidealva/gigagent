@@ -29,13 +29,12 @@ Gigagent::Application.configure do
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
   Paperclip.options[:command_path] = "/usr/local/bin/"
-  
   config.paperclip_defaults = {
       :storage => :s3,
       :s3_credentials => {
-          :bucket => "gigagent",
-          :access_key_id => "AKIAJ7VHPNWNUMWOW2ZQ",
-          :secret_access_key => "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"
+          :bucket => ENV["AWS_BUCKET_NAME"],
+          :access_key_id => ENV["AWS_ACCESS_KEY_ID"],
+          :secret_access_key => ENV["AWS_SECRET_ACCESS_KEY"]
       }
   }
 
